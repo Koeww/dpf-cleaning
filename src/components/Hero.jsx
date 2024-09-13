@@ -4,19 +4,20 @@ const Hero = () => {
 
   return (
     <div className='Hero'>
-        <div className='hero-wrapper'></div>
-        <div className='hero-image'>
-            <div className='h1-h2-wrapper'>
-                <h1 className='is-max-size'>ПОЧИСТВАНЕ НА DPF/fap ФИЛТРИ  и катализатори на</h1>
-                <h2>всякакъв вид моторни превозни средства (мпс)</h2>
+        <div className='hero-wrapper'>
+            <div className='hero-image'>
+                <div className='h1-h2-wrapper'>
+                    <h1 className='is-max-size'>ПОЧИСТВАНЕ НА DPF/fap ФИЛТРИ  и катализатори на</h1>
+                    <h2>всякакъв вид моторни превозни средства (мпс)</h2>
+                </div>
+
+                <img src="public/images/iso_9001_new.svg" alt="hero" className='iso'/>
+
+                <a href="" className='is-green-box position-bottom-left'>
+                    Свържете се с нас
+                    <span className='additional-box'>+</span>
+                </a>
             </div>
-
-            <img src="public/images/iso_9001_new.svg" alt="hero" className='iso'/>
-
-            <a href="" className='is-green-box position-bottom-left'>
-                Свържете се с нас
-                <span className='additional-box'>+</span>
-            </a>
         </div>
 
         <style jsx>{`
