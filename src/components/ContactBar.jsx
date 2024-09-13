@@ -9,7 +9,7 @@ const ContactBar = () => {
         </a>
         <a href="" className='contact-wrapper'>
             <img src="public/images/clock.svg" alt="icon-clock" />
-            09:00 - 18:00
+            09:00 - 18:00 dadada
         </a>
         <a href="" className='contact-wrapper'>
             <img src="public/images/location-pin.svg" alt="icon-location-pin" />
