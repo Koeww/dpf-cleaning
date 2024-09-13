@@ -1,27 +1,23 @@
 import './App.css'
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ContactBar from './components/ContactBar';
-import ServicesComponent from './components/ServicesComponent';
+import { Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import About from './pages/About';
+import Contacts from './pages/Contacts';
 
 const App = () => {
 
 	return (
 		<>
-			<div className='main'>
-				<ContactBar/>
-				<Header/>
-				<Hero/>
-				<ServicesComponent/>
-			</div>
-			<style jsx>{`
-				.main {
-					display: flex;
-					flex-direction: column;
-					width: 100vw;
-					background-color: white;
-				}	
-			`}</style>
+			<Router>
+				<Routes>
+					<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contacts />} />
+					</Route>
+				</Routes>
+			</Router>
 		</>
 	)
 };
