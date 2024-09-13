@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import {routes} from '../routes'
 
 const Header = () => {
   return (
@@ -8,10 +10,10 @@ const Header = () => {
         </a>
 
         <div className='links-container'>
-            <a href="" className="is-black">Почистване на ДПФ</a>
-            <a href="" className="is-black">Услуги</a>
-            <a href="" className="is-black">За нас</a>
-            <a href="" className="is-black">Контакти</a>
+            <Link to={routes.home} className="is-black">Почистване на ДПФ</Link>
+            <Link to={routes.services} className="is-black">Услуги</Link>
+            <Link to={routes.about} className="is-black">За нас</Link>
+            <Link to={routes.contacts} className="is-black">Контакти</Link>
         </div>
 
         <style jsx>{`

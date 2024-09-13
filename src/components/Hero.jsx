@@ -4,6 +4,7 @@ const Hero = () => {
 
   return (
     <div className='Hero'>
+        <div className='hero-wrapper'></div>
         <div className='hero-image'>
             <div className='h1-h2-wrapper'>
                 <h1 className='is-max-size'>ПОЧИСТВАНЕ НА DPF/fap ФИЛТРИ  и катализатори на</h1>
@@ -21,11 +22,8 @@ const Hero = () => {
         <style jsx>{`
             .Hero {
                 position: relative; 
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 width: 100vw;
-                height: 20rem;
+                height: fit-content;
             }
             .h1-h2-wrapper {
                 color: white;
@@ -50,8 +48,8 @@ const Hero = () => {
                 padding: 0.75rem 1rem;
             }
             .iso {
-                width: 5rem;
-                height: 5rem;
+                width: 7rem;
+                height: 7rem;
                 position: absolute;
                 bottom: 1rem;
                 right: 1rem;
