@@ -5,15 +5,15 @@ const ContactBar = () => {
     <div className='ContactBar'>
         <a href="" className='contact-wrapper'>
             <img src="public/images/email.svg" alt="icon-email" />
-            email: dpf-cleaning@abv.bg
+            dpf-cleaning@abv.bg
         </a>
         <a href="" className='contact-wrapper'>
             <img src="public/images/clock.svg" alt="icon-clock" />
-            09:00 - 18:00
+            09:00 - 18:00 dadada
         </a>
         <a href="" className='contact-wrapper'>
             <img src="public/images/location-pin.svg" alt="icon-location-pin" />
-            град Поморие ул.Морска 34 
+            гр.Поморие, Околовръстен път Бургас - Варна, до КПП
         </a>
 
         <style jsx>{`
