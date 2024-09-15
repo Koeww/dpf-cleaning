@@ -10,10 +10,10 @@ const Header = () => {
         </a>
 
         <div className='links-container'>
-            <Link to={routes.home} className="is-black">Почистване на ДПФ</Link>
-            <Link to={routes.services} className="is-black">Услуги</Link>
-            <Link to={routes.about} className="is-black">За нас</Link>
-            <Link to={routes.contacts} className="is-black">Контакти</Link>
+            <Link to={routes.home} className="underline-effect">Почистване на ДПФ</Link>
+            <Link to={routes.services} className="underline-effect">Услуги</Link>
+            <Link to={routes.about} className="underline-effect">За нас</Link>
+            <Link to={routes.contacts} className="underline-effect">Контакти</Link>
         </div>
 
         <style jsx>{`

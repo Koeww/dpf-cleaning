@@ -1,0 +1,44 @@
+:root {
+    /* Color Variables */
+    --primary-color: #3baa35;
+    --secondary-color: #32912d;
+    --background-color: #333333;
+    --text-color: #f5f5f5;
+    --muted-text-color: #888888;
+    
+    /* Font Variables */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+  
+    --heading-font-size: 2rem; /* Customize as per your need */
+    --body-font-size: 1rem;    /* Customize as per your need */
+    
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --font-size-small: 12px;
+
+    /* Spacing Variables */
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+    --spacing-large: 3rem;
+    
+    /* Border Variables */
+    --border-radius: 5px;
+    --border-width: 1px;
+    --border-color: #dddddd;
+    
+    /* Shadow Variables */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    /* Transition Variables */
+    --transition-duration: 0.3s;
+    --transition-easing: ease-in-out;
+    
+    /* Z-index Variables */
+    --z-index-header: 100;
+    --z-index-modal: 1000;
+    --z-index-dropdown: 900;
+}
