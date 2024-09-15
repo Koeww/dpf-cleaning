@@ -8,15 +8,15 @@ const ServicesComponent = () => {
     <div className='ServicesComponent'>
 		<div className='text-wrapper'>
 			ПОЧИСТВАНЕ НА DPF/FAP ФИЛТРИ и катализатори на всякакъв вид моторни превозни средства (мпс) В ПОМОРИЕ
-
 			<Link to={routes.contacts} className='is-green-box position-bottom-right'>
 				Свържете се с нас
 				<span className='additional-box-reversed'>+</span>
 			</Link>
 		</div>
 		<img src="public/images/contact.png" alt="contact-photo" className='services-hero'/>
-		<h3>asdasdasdasdasdasdasdaasdhjashdjahsd</h3>
-		<h4>asdasdasdasda</h4>
+		<h3>Професионално почистване</h3>
+		<h4>ПОДАРЕТЕ НОВ ЖИВОТ НА ВАШИЯТ dpf ФИЛТЪР и катализатор чрез професионалното почистване при нас.</h4>
+
 		<Counters/>
 
         <style jsx>{`
@@ -25,12 +25,12 @@ const ServicesComponent = () => {
 				position: relative;
             }
 			.text-wrapper {
+				margin: 2rem 0;
 				position: relative;
 				color: white;
-				font-size: 2.5rem;
-                text-align: center;
+				font-size: 2rem;
                 background: #333333;
-				padding: 2rem 1rem;
+				padding: 4rem 2rem;
 			}
 			.services-hero {
 				width: 100%;

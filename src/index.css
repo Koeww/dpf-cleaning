@@ -24,8 +24,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-	margin: 0;
 	min-width: 320px;
+}
+
+footer {
+	background-color: #282c34; /* Dark background color */
+	color: #ffffff;            /* White text color */
+	text-align: center;        /* Center the text */
+	padding: 20px;             /* Padding around the text */
+	width: 100%;               /* Full width of the page */
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
 }
 
 /*HEADINGS*/

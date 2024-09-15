@@ -1,20 +1,21 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const ContactBar = () => {
   return (
     <div className='ContactBar'>
-        <a href="" className='contact-wrapper'>
+        <Link to="" className='contact-wrapper'>
             <img src="public/images/email.svg" alt="icon-email" />
             dpf-cleaning@abv.bg
-        </a>
-        <a href="" className='contact-wrapper'>
+        </Link>
+        <Link to="" className='contact-wrapper'>
             <img src="public/images/clock.svg" alt="icon-clock" />
             09:00 - 18:00
-        </a>
-        <a href="" className='contact-wrapper'>
+        </Link>
+        <Link to="" className='contact-wrapper'>
             <img src="public/images/location-pin.svg" alt="icon-location-pin" />
             гр.Поморие, Околовръстен път Бургас - Варна, до КПП
-        </a>
+        </Link>
 
         <style jsx>{`
             .ContactBar {
@@ -31,6 +32,10 @@ const ContactBar = () => {
                 gap: 0.5rem;
             }
             
+            .ContactBar a {
+                transition: all 350ms ease-in-out;
+            }
+
             img {
                 width: 1rem;
                 height: 1rem;

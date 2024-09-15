@@ -21,7 +21,7 @@ const Header = () => {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 1rem;
+                padding: 3rem 2rem;
                 height: 3.5rem;
             }
 
@@ -29,6 +29,7 @@ const Header = () => {
                 display: flex;
                 width: 18.75rem;
                 height: 2.5rem;
+                transition: all 350ms ease-in-out;
             }
             .logo:hover {
                 filter: drop-shadow(0 0 2em #1ab502);
@@ -40,6 +41,10 @@ const Header = () => {
             .links-container {
                 display: flex;
                 gap: 1rem;
+            }
+
+            .links-container a {
+                font-size: 4rem;
             }
         `}</style>
     </div>

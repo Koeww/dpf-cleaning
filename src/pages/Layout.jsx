@@ -3,6 +3,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import ContactBar from '../components/ContactBar';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Layout() {
   return (
@@ -12,6 +13,7 @@ function Layout() {
       <main>
         <Outlet />
       </main>
+      <Footer/>
     </div>
   );
 }
