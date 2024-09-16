@@ -2,6 +2,9 @@ import {useState, useEffect} from 'react'
 
 const Counters = () => {
     const [count, setCount] = useState(0);
+    const [warrantyCount, setWarrantyCount] = useState(0);
+    const [professionalismCount, setProfessionalismCount] = useState(0);
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -17,6 +20,36 @@ const Counters = () => {
         return () => clearInterval(interval);
     }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWarrantyCount(prevCount => {
+        if (prevCount >= 5) {
+          clearInterval(interval);
+          return prevCount;
+        }
+        return prevCount + 1;
+      });
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProfessionalismCount(prevCount => {
+        if (prevCount >= 200) {
+          clearInterval(interval);
+          return prevCount;
+        }
+        return prevCount + 1;
+      });
+    }, 10);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
+
     return (
         <div className='Counters'>
             <li>
@@ -29,16 +62,16 @@ const Counters = () => {
             </li>
             <li>
                 <div className='text-wrapper'>
-                    <span>Гаранция до</span>
-                    <span className='counter'>3 г.</span>
+                    <span>Професионален опит</span>
+                    <span className='counter'>{warrantyCount} г.</span>
                 </div>
                 
                 <img src="public/images/waranty.svg" alt="waranty-icon" />
             </li>
             <li>
                 <div className='text-wrapper'>
-                    <span>Професионализъм вече</span>
-                    <span className='counter'>9 г.</span>
+                    <span>Доволни клиенти</span>
+                    <span className='counter'>{professionalismCount}</span>
                 </div>
                 
                 <img src="public/images/profesionalism.svg" alt="profesionalism-icon" />
