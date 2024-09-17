@@ -4,18 +4,26 @@ const ChangeThemeButton = () => {
 
     const handleClick = () => {
         const root = document.documentElement;
-        
-        if (root.classList.contains('dark-mode')) {
-            root.classList.remove('dark-mode');
-            root.classList.add('light-mode');
-            localStorage.setItem('theme', 'light-mode');
-        } else {
-            root.classList.remove('light-mode');
-            root.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        }
 
-    }
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+            if (root.classList.contains('light-mode')) {
+                root.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+            } else {
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
+            }
+        } else {
+            if (root.classList.contains('dark-mode')) {
+                root.classList.remove('dark-mode');
+                root.classList.add('light-mode');
+            } else {
+                root.classList.remove('light-mode');
+                root.classList.add('dark-mode');
+            }
+        }
+    };
 
     return (
         <button className='ChangeThemeButton' onClick={handleClick}>
@@ -24,7 +32,7 @@ const ChangeThemeButton = () => {
             <style jsx>{`
                 .ChangeThemeButton {
                     position: absolute;
-                    top: 50%;
+                    top: 90%;
                     right: 1rem;
                     background-color: var(--primary-color);
                     color: white;

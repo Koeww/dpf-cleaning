@@ -7,25 +7,13 @@
 	font-weight: var(--font-weight-regular);
 
 	color-scheme: light dark;
-	color: var(--text-color);
-	background-color: white;  
+	/* color: var(--text-color); */
+	/* background-color: white;   */
 	
 	/* font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
-}
-
-dark mode override */
-.dark-mode {
-	--background-color: #213547;
-	--text-color: #ffffff;
-}
-
-/* Manual light mode override */
-.light-mode {
-	--background-color: white;
-	--text-color: black;
 }
 
 body {
@@ -40,12 +28,12 @@ body {
 }
 
 footer {
-	background-color: #282c34; /* Dark background color */
-	color: #ffffff;            /* White text color */
-	text-align: center;        /* Center the text */
-	padding: 20px;             /* Padding around the text */
-	width: 100%;               /* Full width of the page */
-	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
+	background-color: #282c34; 
+	color: #ffffff;            
+	text-align: center;        
+	padding: 20px;             
+	width: 100%;               
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /*HEADINGS*/
@@ -162,9 +150,21 @@ button:focus, button:focus-visible {
   	outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+/* THEME */
+.dark-mode {
+	background-color: #333333 !important;
+	color: #ffffff !important;
+}
+.light-mode {
+	background-color: #ffffff !important;
+	color: #333333 !important;
+}
+
+
 @media (prefers-color-scheme: light) {
 	:root {
-		color: #213547;
+		color: #333333;
 		background-color: #ffffff;
 	}
 }
@@ -172,6 +172,6 @@ button:focus, button:focus-visible {
 @media (prefers-color-scheme: dark) {
 	:root {
 		color: #ffffff;
-		background-color: #213547;
+		background-color: #333333;
 	}
 }
