@@ -16,6 +16,18 @@
 	-moz-osx-font-smoothing: grayscale; */
 }
 
+dark mode override */
+.dark-mode {
+	--background-color: #213547;
+	--text-color: #ffffff;
+}
+
+/* Manual light mode override */
+.light-mode {
+	--background-color: white;
+	--text-color: black;
+}
+
 body {
     height: 100%;
     font-family: var(--font-secondary);
@@ -155,10 +167,11 @@ button:focus, button:focus-visible {
 		color: #213547;
 		background-color: #ffffff;
 	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color: #ffffff;
+		background-color: #213547;
 	}
 }
