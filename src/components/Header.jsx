@@ -35,12 +35,29 @@ const Header = () => {
 
 
             <ul className={menuClass}>
-                <li>aaaaaaa</li>
-                <li>bbbbbbb</li>
-                <li>ccccccc</li>
-                <li>ddddddd</li>
-            </ul>
+                <li>
+                    <div className='upper-row'>
+                        <img src="/images/phone.svg" alt="contact-icon" className='contacts-icon'/>
+                        Телефон
+                    </div>
+                    <span className="contacts-span">0000000</span>
+                </li>
+                <li>
+                    <div className='upper-row'>   
+                        <img src="/images/email.svg" alt="email-icon" className='contacts-icon'/>
+                        Ймейл
+                    </div>
+                    <span className="contacts-span">000000</span>
+                </li>
+                <li>
+                    <div className='upper-row'>
+                        <img src="/images/location-pin.svg" alt="location-icon" className='contacts-icon'/>
+                        Адрес
+                    </div>
+                    <span className="contacts-span">000000</span>
+                </li>
 
+            </ul>
             <style jsx>{`
                 .Header {
                     position: relative;
@@ -87,9 +104,9 @@ const Header = () => {
                     flex-direction: column;
                     justify-content: center;
                     gap: 1rem;
-                    padding: 1rem;
-                    background-color: white;
-                    color: #333333;
+                    padding: 3rem 2rem;
+                    background-color: #333333;
+                    color: white;
                     z-index: 1;
                     transitions: all 1s ease-in-out;
                 }
@@ -99,7 +116,22 @@ const Header = () => {
 
                 li {
                     list-style: none;
+                    text-shadow: 1px 1px 2px black;
+                    display: flex;
+                    flex-direction: column; 
                 }
+                .upper-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                .contacts-span {
+                    font-size: 13px;
+                }
+                .contacts-icon{
+                    width: 1.5rem;
+                }
+                 
             `}</style>
         </div>
     )
