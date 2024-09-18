@@ -13,7 +13,7 @@ const ServicesComponent = () => {
 				<span className='additional-box-reversed'>+</span>
 			</Link>
 		</div>
-		<img src="public/images/contact.png" alt="contact-photo" className='services-hero'/>
+		<img src="/images/contact.png" alt="contact-photo" className='services-hero'/>
 		<h3>Професионално почистване</h3>
 		<h4>ПОДАРЕТЕ НОВ ЖИВОТ НА ВАШИЯТ dpf ФИЛТЪР и катализатор чрез професионалното почистване при нас.</h4>
 

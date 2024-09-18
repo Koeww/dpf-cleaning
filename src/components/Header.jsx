@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <div className='Header'>
             <a href="/">
-                <img src="public/images/advanpure_logo.svg" alt="logo" className="logo"/>
+                <img src="/images/advanpure_logo.svg" alt="logo" className="logo"/>
             </a>
 
             <div className='links-container'>
@@ -30,7 +30,7 @@ const Header = () => {
                 <Link to={routes.services} className="underline-effect">Услуги</Link>
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
-                <img src="public/images/burger.svg" alt="burger" className='burger' onClick={onClickBurger}/>
+                <img src="/images/burger.svg" alt="burger" className='burger' onClick={onClickBurger}/>
             </div>
 
 

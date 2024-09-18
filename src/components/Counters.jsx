@@ -40,7 +40,7 @@ const Counters = () => {
                     <span className='counter'>{count}+</span>
                 </div>
                 
-                <img src="public/images/dpf.svg" alt="dpf-icon" />
+                <img src="/images/dpf.svg" alt="dpf-icon" />
             </li>
             <li>
                 <div className='text-wrapper'>
@@ -48,7 +48,7 @@ const Counters = () => {
                     <span className='counter'>{warrantyCount} г.</span>
                 </div>
                 
-                <img src="public/images/waranty.svg" alt="waranty-icon" />
+                <img src="/images/waranty.svg" alt="waranty-icon" />
             </li>
             <li>
                 <div className='text-wrapper'>
@@ -56,7 +56,7 @@ const Counters = () => {
                     <span className='counter'>{count}</span>
                 </div>
                 
-                <img src="public/images/profesionalism.svg" alt="profesionalism-icon" />
+                <img src="/images/profesionalism.svg" alt="profesionalism-icon" />
             </li>
 
             <style jsx>{`
