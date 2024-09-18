@@ -13,7 +13,7 @@ const Hero = () => {
                     <h2>всякакъв вид моторни превозни средства (мпс)</h2>
                 </div>
 
-                <img src="public/images/iso_9001_new.svg" alt="hero" className='iso'/>
+                <img src="/images/iso_9001_new.svg" alt="hero" className='iso'/>
 
                 <Link to={routes.contacts} className='is-green-box position-bottom-left'>
                     Свържете се с нас
@@ -47,7 +47,7 @@ const Hero = () => {
                 width: 100%;
                 height: 37.5rem;
                 background-size: cover;
-                background-image: url('public/images/home.png');
+                background-image: url('/images/home.png');
             }
             .iso {
                 width: 7rem;

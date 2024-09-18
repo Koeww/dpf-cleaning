@@ -5,15 +5,15 @@ const ContactBar = () => {
   return (
     <div className='ContactBar'>
         <a href="mailto:dpf-cleaning@abv.bg" className='contact-wrapper'>
-            <img src="public/images/email.svg" alt="icon-email" />
+            <img src="/images/email.svg" alt="icon-email" />
             dpf-cleaning@abv.bg
         </a>
         <a href='' className='contact-wrapper'>
-            <img src="public/images/clock.svg" alt="icon-clock" />
+            <img src="/images/clock.svg" alt="icon-clock" />
             09:00 - 18:00
         </a>
         <a href='' className='contact-wrapper'>
-            <img src="public/images/location-pin.svg" alt="icon-location-pin" />
+            <img src="/images/location-pin.svg" alt="icon-location-pin" />
             гр.Поморие, Околовръстен път Бургас - Варна, до КПП
         </a>
 
