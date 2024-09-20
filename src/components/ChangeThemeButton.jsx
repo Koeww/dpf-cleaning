@@ -46,8 +46,8 @@ const ChangeThemeButton = () => {
 
             <style jsx>{`
                 .ChangeThemeButton {
-                    position: sticky;
-                    top: 50%;
+                    position: fixed;
+                    top: 70%;
                     left: 94%;
                     background-color: var(--primary-color);
                     color: white;
@@ -61,8 +61,8 @@ const ChangeThemeButton = () => {
                     background-color: var(--secondary-color);
                 }   
                 .thememode-icon {
-                    width: 2rem;
-                    height: 2rem;
+                    width: 1.75rem;
+                    height: 1.75rem;
                 }
             `}</style>
         </button>

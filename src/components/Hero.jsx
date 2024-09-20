@@ -9,7 +9,7 @@ const Hero = () => {
         <div className='hero-wrapper'>
             <div className='hero-image'>
                 <div className='h1-h2-wrapper'>
-                    <h1>ПОЧИСТВАНЕ НА DPF/fap ФИЛТРИ  и катализатори на</h1>
+                    <h1>ПОЧИСТВАНЕ НА DPF/FAP филтри  и катализатори на</h1>
                     <h2>всякакъв вид моторни превозни средства (мпс)</h2>
                 </div>
 
