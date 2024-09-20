@@ -1,50 +1,71 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const PopUp = (props) => {
+const PopUp = ({closeOverlay, title, content}) => {
+
+    const popUpClasses = classNames('PopUp');
+
+    const setCookie  = (cname, cvalue, exdays) => {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    };
+
+    const agree = () => setCookie('cookieConsent', 'true', 7);
 
     return (
-        <div className='PopUp'>
+        <div className={popUpClasses}>
             <div className='popup-header'>
-                <img src="/images/close-icon.svg" alt="close-icon" className='close-icon' onClick={props.closeOverlay} />
-                PopUp header
+                <img src="/images/close-icon.svg" alt="close-icon" className='close-icon' onClick={closeOverlay} />
+                {title}
             </div>
 
-            <div className='popup-content'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat sint tempore reprehenderit, tempora excepturi amet cupiditate ratione a voluptatem maxime in. Dignissimos repellendus excepturi aliquam temporibus exercitationem provident odit.
-            </div>
+            <div className='popup-content' dangerouslySetInnerHTML={{ __html: content }} />
 
+            <div className='popup-footer'>
+                <button onClick={agree}>Agree</button>
+                <button onClick={closeOverlay}>Cancel</button>
+            </div>
 
             <style jsx>{`
-            .PopUp {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: white;
-                color: #333333;
-                padding: 2rem;
-                border-radius: 5px;
-                z-index: 10;
-            }
+                .PopUp {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                    color: #333333;
+                    padding: 2rem;
+                    border-radius: 5px;
+                    z-index: 10;
+                }
 
-            .popup-header {
-                font-size: 2rem;
-                text-align: center;
-            }
+                .popup-header {
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
 
-            .popup-content {
-                padding: 1rem;
-            }
-            .close-icon {
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                width: 2rem;
-                height: 2rem;
-                cursor: pointer;
-            }
+                .popup-content {
+                    padding: 1rem;
+                }
+                .popup-footer {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 1rem 0;
+                }
 
-        `}</style>
+                .close-icon {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                }
+            `}</style>
         </div>
     )
 }

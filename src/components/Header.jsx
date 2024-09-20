@@ -1,15 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import classNames from 'classnames';
 import {routes} from '../routes'
 
 const Header = () => {
     const [isVissibleMenu, setIsVissibleMenu] = useState(false);
-
-    useEffect(() => {
-        console.log(isVissibleMenu)
-
-    }, [isVissibleMenu])    
 
     const onClickBurger = () => {
         setIsVissibleMenu(prevState => prevState ? false : true);
@@ -40,21 +35,21 @@ const Header = () => {
                         <img src="/images/phone.svg" alt="contact-icon" className='contacts-icon'/>
                         Телефон
                     </div>
-                    <span className="contacts-span">0000000</span>
+                    <span className="contacts-span">+359 887 776 177</span>
                 </li>
                 <li>
                     <div className='upper-row'>   
                         <img src="/images/email.svg" alt="email-icon" className='contacts-icon'/>
                         Ймейл
                     </div>
-                    <span className="contacts-span">000000</span>
+                    <span className="contacts-span">dpf-cleaning@abv.bg</span>
                 </li>
                 <li>
                     <div className='upper-row'>
                         <img src="/images/location-pin.svg" alt="location-icon" className='contacts-icon'/>
                         Адрес
                     </div>
-                    <span className="contacts-span">000000</span>
+                    <span className="contacts-span">гр.Поморие, Околовръстен път Бургас - Варна, до КПП</span>
                 </li>
 
             </ul>
@@ -101,7 +96,6 @@ const Header = () => {
                     top: 100%;
                     right: 0;
                     width: 400px;
-                    height: 750px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
