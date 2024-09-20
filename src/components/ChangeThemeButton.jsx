@@ -3,13 +3,9 @@ import {useState} from "react";
 const ChangeThemeButton = () => {
     const [iconURL, setIconURL] = useState('moon.svg');
 
-    const setMoonIcon = () => {
-        setIconURL('moon.svg');
-    };
+    const setMoonIcon = () => setIconURL('moon.svg');
 
-    const setSunIcon = () => {
-        setIconURL('sun.svg');
-    };
+    const setSunIcon = () => setIconURL('sun.svg');
 
     const handleClick = () => {
         const root = document.documentElement;
@@ -36,23 +32,24 @@ const ChangeThemeButton = () => {
                 root.classList.add('dark-mode');
             }
         }
-
-
     };
 
     return (
-        <button className='ChangeThemeButton' onClick={handleClick}>
+        <div className='ChangeThemeButton' onClick={handleClick}>
             <img src={`/images/${iconURL}`} alt="moon-icon" className='thememode-icon'/>
 
             <style jsx>{`
                 .ChangeThemeButton {
                     position: fixed;
-                    top: 70%;
-                    left: 94%;
+                    top: 88%;
+                    right: 1rem;
                     background-color: var(--primary-color);
                     color: white;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    padding: 0.75rem;
                     border: none;
-                    padding: 10px 20px;
+                    border-radius: 50%;
                     cursor: pointer;
                     z-index: 1;
                 }  
@@ -61,11 +58,11 @@ const ChangeThemeButton = () => {
                     background-color: var(--secondary-color);
                 }   
                 .thememode-icon {
-                    width: 1.75rem;
-                    height: 1.75rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
                 }
             `}</style>
-        </button>
+        </div>
     )
 }
 

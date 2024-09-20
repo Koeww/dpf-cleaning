@@ -30,7 +30,6 @@ const Hero = () => {
             }
             .hero-wrapper {
                 position: relative; 
-                width: 100vw;
                 height: fit-content;
             }
             .h1-h2-wrapper {

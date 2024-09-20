@@ -17,8 +17,8 @@ const AgreementButton = (props) => {
                     left: 1rem;
                     background-color: var(--primary-color);
                     color: white;
-                    width: 1.50rem;
-                    height: 1.50rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
                     padding: 0.75rem;
                     border: none;
                     border-radius: 50%;
@@ -26,8 +26,8 @@ const AgreementButton = (props) => {
                     z-index: 1;
                 }
                 .agreement-icon {
-                    width: 1.50rem;
-                    height: 1.50rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
                 }
             `}</style>
         </div>
