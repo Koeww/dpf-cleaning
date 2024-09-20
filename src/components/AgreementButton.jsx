@@ -7,8 +7,8 @@ const AgreementButton = (props) => {
     };
 
     return (
-        <div className='AgreementButton'>
-            <img src="/images/privacy-policy.svg" alt="agreement-icon" className='agreement-icon'onClick={openPopUp}/>
+        <div className='AgreementButton' onClick={openPopUp}>
+            <img src="/images/privacy-policy.svg" alt="agreement-icon" className='agreement-icon'/>
             
             <style jsx>{`
                 .AgreementButton {
