@@ -100,15 +100,18 @@ const Header = () => {
                     position: absolute;
                     top: 100%;
                     right: 0;
+                    width: 400px;
+                    height: 750px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: 1rem;
+                    margin: 0 auto;
                     padding: 3rem 2rem;
                     background-color: #333333;
                     color: white;
                     z-index: 1;
-                    transitions: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
                 }
                 .menu-vissible {
                     display: none
@@ -119,6 +122,7 @@ const Header = () => {
                     text-shadow: 1px 1px 2px black;
                     display: flex;
                     flex-direction: column; 
+                    font-size: 1.5rem;
                 }
                 .upper-row {
                     display: flex;
@@ -126,7 +130,7 @@ const Header = () => {
                     gap: 0.5rem;
                 }
                 .contacts-span {
-                    font-size: 13px;
+                    font-size: 1rem;
                 }
                 .contacts-icon{
                     width: 1.5rem;
