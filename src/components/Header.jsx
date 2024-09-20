@@ -16,7 +16,7 @@ const Header = () => {
     };
 
 	const menuClass = classNames('menu', {
-		'menu-vissible': isVissibleMenu,
+		'menu-vissible': !isVissibleMenu,
 	});
 
     return (
