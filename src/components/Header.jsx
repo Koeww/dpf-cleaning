@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className='Header'>
             <a href="/">
-                <img src="/images/advanpure_logo.svg" alt="logo" className="logo"/>
+                <img src="/images/dpf-logo.svg" alt="logo" className="logo"/>
             </a>
 
             <div className='links-container'>
@@ -26,7 +26,7 @@ const Header = () => {
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
 
-                <object type="image/svg+xml" data="/images/burger.svg" class="hb" onClick={onClickBurger}/>
+                <img src="/images/burger.svg" className="hb" onClick={onClickBurger}/>
             </div>
 
 
@@ -66,8 +66,8 @@ const Header = () => {
 
                 .logo {
                     display: flex;
-                    width: 18.75rem;
-                    height: 2.5rem;
+
+                    height: 4rem;
                     transition: all 350ms ease-in-out;
                 }
                 .logo:hover {
