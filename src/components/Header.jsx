@@ -25,9 +25,8 @@ const Header = () => {
                 <Link to={routes.services} className="underline-effect">Услуги</Link>
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
-                {/* <img src="/images/burger.svg" alt="burger" className='hb' onClick={onClickBurger}/> */}
-                <object type="image/svg+xml" data="/images/burger.svg" class="hb" onClick={onClickBurger}/>
 
+                <object type="image/svg+xml" data="/images/burger.svg" class="hb" onClick={onClickBurger}/>
             </div>
 
 
