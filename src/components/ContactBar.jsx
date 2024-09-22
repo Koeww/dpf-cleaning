@@ -25,6 +25,7 @@ const ContactBar = () => {
                 padding: 1rem;
                 height: 1rem;
                 background: #333333;
+                border-bottom: 0.0625rem solid var(--primary-color); 
             }
             .contact-wrapper {
                 display: flex;

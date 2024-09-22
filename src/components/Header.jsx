@@ -8,10 +8,11 @@ const Header = () => {
 
     const onClickBurger = () => {
         setIsVissibleMenu(prevState => prevState ? false : true);
+
     };
 
 	const menuClass = classNames('menu', {
-		'menu-vissible': !isVissibleMenu,
+		'menu-closed': !isVissibleMenu
 	});
 
     return (
@@ -26,7 +27,7 @@ const Header = () => {
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
 
-                <img src="/images/burger.svg" className="hb" onClick={onClickBurger}/>
+                <img src={`/images/${!isVissibleMenu ? 'burger' : 'slim-close-icon-white'}.svg`} className='burger' onClick={onClickBurger}/>
             </div>
 
 
@@ -97,6 +98,7 @@ const Header = () => {
                     top: 100%;
                     right: 0;
                     width: 400px;
+                    max-height: 12rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -105,11 +107,16 @@ const Header = () => {
                     padding: 3rem 2rem;
                     background-color: #333333;
                     color: white;
+                    overflow: hidden;
                     z-index: 1;
-                    transition: all 1s ease-in-out;
+                    transition: max-height 150ms linear, opacity 250ms ease-in-out;
+                    opacity: 1;
+                    pointer-events: all;
                 }
-                .menu-vissible {
-                    display: none
+                .menu-closed {
+                    max-height: 0;
+                    opacity: 0;
+                    pointer-events: none;
                 }
 
                 li {

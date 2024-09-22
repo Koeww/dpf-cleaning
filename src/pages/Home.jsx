@@ -1,15 +1,15 @@
 import React from 'react'
-import ContactBar from '../components/ContactBar';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import ServicesComponent from '../components/ServicesComponent';
+import WhyUs from '../components/WhyUs';
 
 const Home = () => {
 
     return (
         <>
-            <Hero/>
-            <ServicesComponent/>
+            <Hero />
+            <ServicesComponent />
+            <WhyUs />
         </>
     )
 }
