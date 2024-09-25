@@ -54,7 +54,7 @@ const Useful = () => {
             .cards-wrapper {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 3rem;
+                gap: 5rem;
                 margin-top: 1rem;
             }
             .cards {
