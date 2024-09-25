@@ -72,6 +72,9 @@ a.is-black {
 a.is-green {
   	color: green;
 }
+.has-background-green {
+	background: var(--primary-color);
+}
 
 /*GREEN BOX*/
 a.is-green-box {

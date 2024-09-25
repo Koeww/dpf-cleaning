@@ -11,22 +11,19 @@ const WhyUs = () => {
             </div>
 
             <div className='photo-wrapper'>
-                <img src="/images/why-us-hero.png" alt="why-us" className='why-us-hero'/>
-
                 <ul>
                     <li>
                         <img src="/images/quality-white.svg" alt="quality" />
                         <h5>Гаранция за Качество</h5>
                         <p>Защото работим на високо професионално ниво</p>
                     </li>
-
-                    <li>
+                    <li className='has-background-green'>
                         <img src="/images/vehicle-white.svg" alt="vehicle" />
                         <h5>Всички Видове МПС</h5>
                         <p>Защото почистваме DPF филтри на всички видове леки коли, автомобили, бусове – леко товарни, селскостопански машини , влекачи и тежкотоварни машини, дори ако е превозното средство е над 7.5 тона.</p>
                     </li>
 
-                    <li>
+                    <li className='has-background-green'>
                         <img src="/images/tools-white.svg" alt="tools" />
                         <h5>Модерна Технология</h5>
                         <p>Защото машината ни е с едно от най-модерните и щадящи почиствания за DPF</p>
@@ -62,9 +59,13 @@ const WhyUs = () => {
                 list-style: none;
                 display: flex;
                 flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
             }
             li {
-                width: 50%;
+                max-width: 50%;
+                flex-grow: 1;
+                padding: 1rem;
             }
             li img {
                 width: 4rem;
