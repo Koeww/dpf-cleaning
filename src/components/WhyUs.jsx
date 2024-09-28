@@ -63,7 +63,7 @@ const WhyUs = () => {
                 margin: 0;
             }
             li {
-                max-width: 50%;
+                width: calc(50% - 2rem);
                 flex-grow: 1;
                 padding: 1rem;
             }

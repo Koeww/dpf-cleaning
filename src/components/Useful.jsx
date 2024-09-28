@@ -63,10 +63,10 @@ const Useful = () => {
                 align-items: center;
                 text-align: center;
                 width: 15rem;
-                background: var(--secondary-color);
+                background: rgba(255, 255, 255, 0.5);
                 padding: 0.5rem 1rem;
                 border-radius: 35px;
-                box-shadow:  2px 2px 10px var(--primary-color);
+                backdrop-filter: blur(10);
             }
             ul {
 
