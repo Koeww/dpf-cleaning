@@ -93,7 +93,7 @@ const Useful = () => {
                 width: 50px;
                 height: 50px;
                 position: absolute;
-                white-space: nowrap;
+                white-space: nowrap;    
                 animation: move infinite linear;
             }
 

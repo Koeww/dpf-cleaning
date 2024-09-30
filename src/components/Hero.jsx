@@ -36,7 +36,7 @@ const Hero = () => {
                 color: white;
                 position: absolute;
                 top: 50%;
-                left: 4rem; 
+                left: var(--desktop-gap); 
                 transform: translateY(-50%);
             }
             .hero-image {
@@ -52,8 +52,8 @@ const Hero = () => {
                 width: 7rem;
                 height: 7rem;
                 position: absolute;
-                bottom: 1rem;
-                right: 1rem;
+                bottom: var(--desktop-gap);
+                right: var(--desktop-gap);
             }
         `}</style>
     </div>

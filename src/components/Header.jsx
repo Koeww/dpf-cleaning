@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <div className='Header'>
             <a href="/">
-                <img src="/images/dpf-logo.svg" alt="logo" className="logo"/>
+                <img src="/images/dpf-logo-new.svg" alt="logo" className="logo"/>
             </a>
 
             <div className='links-container'>
