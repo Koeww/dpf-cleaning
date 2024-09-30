@@ -52,7 +52,7 @@ const Diagram = () => {
 
             <style jsx>{`
                 .Diagram {
-                    
+                    padding: 0 var(--desktop-gap);
                 }
                 .radial-chart {
                     position: relative;

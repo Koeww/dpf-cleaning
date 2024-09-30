@@ -41,4 +41,10 @@
     --z-index-header: 100;
     --z-index-modal: 1000;
     --z-index-dropdown: 900;
+
+
+    /* Gaps */
+
+    --desktop-gap: 2rem;
+    --mobile-gap: 2rem;
 }

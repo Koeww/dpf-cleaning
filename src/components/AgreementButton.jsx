@@ -13,8 +13,8 @@ const AgreementButton = (props) => {
             <style jsx>{`
                 .AgreementButton {
                     position: fixed;
-                    top: 88%;
-                    left: 1rem;
+                    bottom: var(--desktop-gap);
+                    left: var(--desktop-gap);
                     background-color: var(--primary-color);
                     color: white;
                     width: 1.5rem;

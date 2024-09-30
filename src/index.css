@@ -105,13 +105,13 @@ span.additional-box-reversed {
 /*POSITIONING*/
 .position-bottom-left {
 	position: absolute;
-	bottom: var(--spacing-large);
-	left: var(--spacing-large); 
+	bottom: var(--desktop-gap);
+	left: var(--desktop-gap); 
 } 
 .position-bottom-right {
 	position: absolute;
-	bottom: var(--spacing-large);
-	right: var(--spacing-large); 
+	bottom: var(--desktop-gap);
+	right: var(--desktop-gap); 
 }
 
 

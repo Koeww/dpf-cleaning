@@ -28,7 +28,7 @@ const ServicesComponent = () => {
 				color: white;
 				font-size: 2rem;
                 background: #333333;
-				padding: 4rem 2rem;
+				padding: 4rem var(--desktop-gap);
 			}
 			.DPF {
 				color: #3AAA36;

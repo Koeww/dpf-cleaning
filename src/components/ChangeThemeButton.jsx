@@ -41,8 +41,8 @@ const ChangeThemeButton = () => {
             <style jsx>{`
                 .ChangeThemeButton {
                     position: fixed;
-                    top: 88%;
-                    right: 1rem;
+                    bottom: var(--desktop-gap);
+                    right: var(--desktop-gap);
                     background-color: var(--primary-color);
                     color: white;
                     width: 1.5rem;

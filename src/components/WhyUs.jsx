@@ -59,7 +59,7 @@ const WhyUs = () => {
                 list-style: none;
                 display: flex;
                 flex-wrap: wrap;
-                padding: 0;
+                padding: 0 var(--desktop-gap);
                 margin: 0;
             }
             li {
