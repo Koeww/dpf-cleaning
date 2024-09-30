@@ -7,10 +7,10 @@ const Useful = () => {
 
         <div className="moving-elements-wrapper">
             <img src="images/dpf-filter-green.svg" alt="el1" className="moving-element el1" />
-            <img src="images/french.svg" alt="el2" className="moving-element el2" />
+            {/* <img src="images/french.svg" alt="el2" className="moving-element el2" />
             <img src="images/gear.svg" alt="el3" className="moving-element el3" />
             <img src="images/screw-driver.svg" alt="el4" className="moving-element el4" />
-            <img src="images/wrench.svg" alt="el5" className="moving-element el5" />
+            <img src="images/wrench.svg" alt="el5" className="moving-element el5" /> */}
         </div>
 
         <div className='cards-wrapper'>
@@ -67,7 +67,6 @@ const Useful = () => {
                 position: absolute;
                 top: 50%;
                 left: 0;
-                overflow: hidden;
             }
 
             @keyframes move {
@@ -75,7 +74,7 @@ const Useful = () => {
                     transform: translateX(100vw)  translateY(0);
                 }
                 25% {
-                    transform: translateX(30vw) translateY(2rem);
+                    transform: translateX(0vw) translateY(2rem);
                 }
                 50% {
                     transform: translateX(75rem) translateY(-5rem);
