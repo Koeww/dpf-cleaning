@@ -31,7 +31,7 @@ const ServicesComponent = () => {
 				padding: 4rem var(--desktop-gap);
 			}
 			.DPF {
-				color: #3AAA36;
+				color: #DE1D24;
 			}
 			{/* .services-hero {
 				width: 100%;

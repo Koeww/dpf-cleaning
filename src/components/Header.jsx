@@ -72,7 +72,7 @@ const Header = () => {
                     transition: all 350ms ease-in-out;
                 }
                 .logo:hover {
-                    filter: drop-shadow(0 0 2em #1ab502);
+                    filter: drop-shadow(0 0 2em #DE1D24);
                 }
                 .logo.react:hover {
                     filter: drop-shadow(0 0 2em #61dafbaa);

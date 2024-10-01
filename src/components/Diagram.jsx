@@ -137,7 +137,7 @@ const Diagram = () => {
                     position: relative;
                     width: 4rem;
                     height: ${countTwo}%;
-                    background-color: #3AAA36;
+                    background-color: #DE1D24;
                 }
                 .progress-bar-text {
                     position: absolute;
