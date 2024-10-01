@@ -1,5 +1,5 @@
-import React from 'react'
 import Hero from '../components/Hero';
+import Hero2 from '../components/Hero2';
 import ServicesComponent from '../components/ServicesComponent';
 import WhyUs from '../components/WhyUs';
 import Useful from '../components/Useful';
@@ -11,6 +11,7 @@ const Home = () => {
         <>
             <Hero />
             <ServicesComponent />
+            <Hero2/>
             <WhyUs />
             <Useful />
             <Diagram />
