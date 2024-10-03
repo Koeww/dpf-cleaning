@@ -7,7 +7,7 @@ const Hero2 = () => {
             <img
                 src="images/ad5000.webp"
                 alt="ad5000"
-                className="ad5000"
+                className="ad5000"  
             />
             <div className="content">
                 <h3>Разполагаме с машини от най - ново поколение.</h3>
@@ -33,10 +33,10 @@ const Hero2 = () => {
                     left: 0;
                     text-align: left;
                     transform: translateY(-50%);
-                    width: 100vw;
+                    width: calc(100vw - 4rem);
                     height: 10rem;
                     padding: 1.5rem var(--desktop-gap);
-                    background-color: green;                
+                    background-color: var(--primary-color);                
                 }
             `}</style>
         </div>
