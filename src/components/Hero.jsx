@@ -37,15 +37,15 @@ const Hero = () => {
                 .h1-h2-wrapper {
                     color: white;
                     position: absolute;
-                    top: 50%;
-                    left: var(--desktop-gap); 
+                    top: 80%;
+                    left: 65rem;
                     transform: translateY(-50%);
                 }
                 .iso {
-                    width: 7rem;
-                    height: 7rem;
+                    width: 10.75rem;
+                    height: 10.75rem;
                     position: absolute;
-                    bottom: var(--desktop-gap);
+                    top: 10rem;
                     right: var(--desktop-gap);
                 }
             `}</style>
