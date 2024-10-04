@@ -38,7 +38,7 @@ const Offer = () => {
         <ul>
           <li>
             <img src="images/tick.svg" alt="tick" />
-            Почистване на фиксирана цена.
+            Почистване на фиксирана цена без ддс.
           </li>
 
           <li>
