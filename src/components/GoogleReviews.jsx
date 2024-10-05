@@ -55,6 +55,9 @@ const GoogleMapsReviews = () => {
         const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeId}&fields=reviews&key=${apiKey}`;
 
         const response = await axios.get(url);
+
+        console.log(response);
+        
         if (response.data.result.reviews) {
           setReviews(response.result.reviews);
         }
