@@ -8,10 +8,10 @@ const ServicesComponent = () => {
     <div className='ServicesComponent'>
 		<div className='text-wrapper'>
 			ПОЧИСТВАНЕ НА <span className='DPF'>DPF/FAP</span> филтри и катализатори на всякакъв вид моторни превозни средства (МПС) в гр.ПОМОРИЕ
-			<Link to={routes.contacts} className='is-green-box position-bottom-right'>
+			{/* <Link to={routes.contacts} className='is-green-box position-bottom-right'>
 				Свържете се с нас
 				<span className='additional-box-reversed'>+</span>
-			</Link>
+			</Link> */}
 		</div>
 		{/* <img src="/images/contact.png" alt="contact-photo" className='services-hero'/> */}
 		{/* <h3>Професионално почистване</h3>

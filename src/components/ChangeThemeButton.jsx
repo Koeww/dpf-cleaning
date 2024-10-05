@@ -51,7 +51,7 @@ const ChangeThemeButton = () => {
                     border: none;
                     border-radius: 50%;
                     cursor: pointer;
-                    z-index: 1;
+                    z-index: 9999;
                 }  
                 .ChangeThemeButton:hover {
                     transition: all 300ms ease-in-out;

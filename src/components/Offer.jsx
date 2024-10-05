@@ -30,7 +30,7 @@ const Offer = () => {
           <div className='text-wrapper'>
             DPF CLEANING
             <span className='additional-text'>
-              from 299BGN
+              from <span className='additional-text-price'>299BGN</span>
             </span>
           </div>
         </div>
@@ -38,50 +38,46 @@ const Offer = () => {
         <ul>
           <li>
             <img src="images/tick.svg" alt="tick" />
-            asdasdsd
+            Почистване на фиксирана цена без (ддс).
           </li>
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            asdasdsd
+            Включва (Взимане и връщане).
           </li>
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            asdasdsd
+            12-Месечна Гаранция!
           </li>
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            asdasdsd
+            Включва тестов протокол.
           </li>
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            asdasdsd
-          </li>
-
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            asdasdsd
+            ISO 9001 Certified
           </li>
         </ul>
-
+      
         <GoogleMapsReviews/>
 
         <style jsx>{`
           .Offer {
             color: #333333;
             position: absolute;
-            top: 20rem;
-            left: 5rem;
-            width: 20rem;
+            top: 11rem;
+            left: 2rem;
+            width: 30rem;
             height: 25rem;
             background-color: white;
             padding: 2rem 1.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 9999;
           }
           .wrapper {
             display: flex;
@@ -94,17 +90,28 @@ const Offer = () => {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: 25px;
+            font-weight: bold;
           }
           .dpf-reinigung {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 7.5rem;
+            height: 7.5rem;
           }
           .additional-text {
             color: var(--primary-color);
+            font-size: 20px;
+          }
+          .additional-text-price {
+            font-size: 50px;
           }
           ul {
             list-style: none;
             margin-top: 1rem;
+          }
+          li {
+            font-weight: 700;
+            text-transform: uppercase;
+
           }
           li img {
             width: 1rem;
