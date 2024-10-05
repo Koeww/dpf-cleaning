@@ -38,12 +38,12 @@ const Offer = () => {
         <ul>
           <li>
             <img src="images/tick.svg" alt="tick" />
-            Почистване на фиксирана цена без ддс.
+            Почистване на фиксирана цена без (ддс).
           </li>
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            Включва (Взимане и връщане)
+            Включва (Взимане и връщане).
           </li>
 
           <li>
@@ -53,7 +53,7 @@ const Offer = () => {
 
           <li>
             <img src="images/tick.svg" alt="tick" />
-            Вкл.тестов протокол
+            Включва тестов протокол.
           </li>
 
           <li>
@@ -68,9 +68,9 @@ const Offer = () => {
           .Offer {
             color: #333333;
             position: absolute;
-            top: 20rem;
-            left: 5rem;
-            width: 25rem;
+            top: 11rem;
+            left: 2rem;
+            width: 30rem;
             height: 25rem;
             background-color: white;
             padding: 2rem 1.5rem;
@@ -107,6 +107,11 @@ const Offer = () => {
           ul {
             list-style: none;
             margin-top: 1rem;
+          }
+          li {
+            font-weight: 700;
+            text-transform: uppercase;
+
           }
           li img {
             width: 1rem;

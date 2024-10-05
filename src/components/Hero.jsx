@@ -12,8 +12,8 @@ const Hero = () => {
             </video>
 
             <div className='h1-h2-wrapper'>
-                <h1>ПОЧИСТВАНЕ НА DPF/FAP филтри  и катализатори на</h1>
-                <h2>всякакъв вид моторни превозни средства (мпс)</h2>
+                <h1 className='h1-wrapper'>ПОЧИСТВАНЕ НА DPF/FAP филтри  и катализатори на</h1>
+                <h2>всички видове моторни превозни средства (мпс)</h2>
             </div>
 
             <img src="/images/iso_9001_new.svg" alt="hero" className='iso' />
@@ -33,6 +33,9 @@ const Hero = () => {
                     width: 100%;
                     height: 37.5rem;
                     object-fit: cover;
+                }
+                .h1-wrapper {
+                    font-size: 2.25rem;
                 }
                 .h1-h2-wrapper {
                     color: white;

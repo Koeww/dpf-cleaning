@@ -57,7 +57,6 @@ const Useful = () => {
                 flex-direction: column;
                 align-items: center;
                 position: relative;
-                width: 100%;
                 padding: 2rem;
             }
 
