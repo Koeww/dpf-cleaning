@@ -5,6 +5,7 @@ import WhyUs from '../components/WhyUs';
 import Useful from '../components/Useful';
 import Diagram from '../components/Diagram';
 import Offer from '../components/Offer';
+import GoogleMapsReviews from '../components/GoogleReviews';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
         <>
             <Hero />
             <Offer />
+            <GoogleMapsReviews/>
             <ServicesComponent />
             <Hero2/>
             <WhyUs />

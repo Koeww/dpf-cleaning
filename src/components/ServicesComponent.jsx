@@ -1,7 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {routes} from '../routes'
-import Counters from '../components/Counters'
+import GoogleMapsReviews from './GoogleReviews'
 
 const ServicesComponent = () => {
   return (
@@ -16,7 +14,6 @@ const ServicesComponent = () => {
 		{/* <img src="/images/contact.png" alt="contact-photo" className='services-hero'/> */}
 		{/* <h3>Професионално почистване</h3>
 		<h4>ПОДАРЕТЕ НОВ ЖИВОТ НА ВАШИЯТ dpf ФИЛТЪР и катализатор чрез професионалното почистване при нас.</h4> */}
-
 
         <style jsx>{`
             .ServicesComponent { 

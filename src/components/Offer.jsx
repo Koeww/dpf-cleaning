@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react'
-import {getReviews} from '../ajax'
-import GoogleMapsReviews from './GoogleReviews'
+import React from 'react'
 
 const Offer = () => {
 
@@ -44,8 +42,6 @@ const Offer = () => {
             ISO 9001 Certified
           </li>
         </ul>
-      
-        <GoogleMapsReviews/>
 
         <style jsx>{`
           .Offer {
