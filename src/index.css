@@ -1,6 +1,7 @@
 @import './assets/variables.css';
 
 :root {
+	box-sizing: border-box;
 	font-family: var(--font-secondary); 
 	line-height: 1.25;
 	font-size: var(--font-size-base);
@@ -25,15 +26,6 @@ body {
     margin: 0;
     padding: 0;
 	min-width: 320px;
-}
-
-footer {
-	border-top: 0.0625rem solid var(--primary-color); 
-	background-color: var(--background-color); 
-	color: #ffffff;            
-	text-align: center;        
-	padding: 20px;                   
-	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /*HEADINGS*/

@@ -38,9 +38,9 @@ const Hero = () => {
                     font-size: 2.25rem;
                 }
                 .h1-h2-wrapper {
-                    color: white;
+                    color: inherit;
                     position: absolute;
-                    top: 80%;
+                    top: 26rem;
                     left: 65rem;
                     transform: translateY(-50%);
                 }
@@ -48,7 +48,7 @@ const Hero = () => {
                     width: 10.75rem;
                     height: 10.75rem;
                     position: absolute;
-                    top: 10rem;
+                    top: 6rem;
                     right: var(--desktop-gap);
                 }
             `}</style>

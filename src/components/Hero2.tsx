@@ -18,7 +18,6 @@ const Hero2 = () => {
                 .Hero2 {
                     position: relative;
                     height: 30rem;
-                    width: 100vw;
                 }
                 img {
                     height: 30rem;
@@ -29,11 +28,11 @@ const Hero2 = () => {
                 }
                 .content {
                     position: absolute;
+                    width: calc(100% - 2*var(--desktop-gap));
                     top: 50%;
                     left: 0;
                     text-align: left;
                     transform: translateY(-50%);
-                    width: calc(100vw - 4rem);
                     height: 10rem;
                     padding: 1.5rem var(--desktop-gap);
                     background-color: var(--primary-color);                

@@ -4,23 +4,6 @@ import GoogleMapsReviews from './GoogleReviews'
 
 const Offer = () => {
 
-  // useEffect(() => {
-  //   const params = {
-  //     place_id: 'ChIJ0wjvRSeXpkARiqhljZ19hZI',          
-  //     fields: 'reviews',          
-  //     key: 'AIzaSyAb1wjFjUeyAEQN3GkADEGGTgWYeKaaXnE'              
-  //   };
-      
-  //   getReviews(params)
-  //     .then((res) => {
-  //         console.log(res);
-  //     })
-  //     .catch((err) => {
-  //         console.log(err);
-  //     })
-  // }, [])
-
-
   return (
     <div className="Offer">
         <div className='wrapper'>
