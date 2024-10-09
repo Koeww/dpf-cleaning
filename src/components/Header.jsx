@@ -22,7 +22,7 @@ const Header = () => {
             </a>
 
             <div className='links-container'>
-                <Link to={routes.home} className="underline-effect">Почистване на ДПФ</Link>
+                <Link to={routes.home} className="underline-effect">Начало</Link>
                 <Link to={routes.services} className="underline-effect">Услуги</Link>
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
@@ -137,7 +137,30 @@ const Header = () => {
                 .contacts-icon{
                     width: 1.5rem;
                 }
-                 
+                @media screen and (max-width: 768px) {
+
+                }
+                @media screen and (max-width: 480px) {
+                    .Header {
+                        text-wrap: nowrap;
+                    }
+                    .burger {
+                        width: 2rem;
+                        height: 2rem;
+                    } 
+                    .menu {
+                        width: calc(100vw - 4*var(--mobile-gap));
+                        text-wrap: wrap;
+                        left: 0;
+
+                    }
+                    .underline-effect {
+                        font-size: 1rem;
+                    }
+                    .logo {
+                        display: none;
+                    }
+                }
             `}</style>
         </div>
     )
