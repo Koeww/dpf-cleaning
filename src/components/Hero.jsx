@@ -25,7 +25,7 @@ const Hero = () => {
 
             <style jsx>{`
                 .Hero {
-                    width: 100%;
+                    width: 100vw;
                     height: fit-content;
                     position: relative; 
                 }
@@ -33,9 +33,6 @@ const Hero = () => {
                     width: 100%;
                     height: 37.5rem;
                     object-fit: cover;
-                }
-                .h1-wrapper {
-                    font-size: 2.25rem;
                 }
                 .h1-h2-wrapper {
                     color: inherit;
@@ -50,6 +47,26 @@ const Hero = () => {
                     position: absolute;
                     top: 6rem;
                     right: var(--desktop-gap);
+                }
+                @media screen and (max-width: 480px) {
+                    .video {
+                        height: 20.5rem;
+                    }
+                    .h1-h2-wrapper {
+                        width: 70vw;
+
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        margin: 0 var(--mobile-gap) auto 0;
+                    }
+                    .iso {
+                        width: 7rem;
+                        height: 7rem;
+                        top: 20.5rem;
+                        right: var(--mobile-gap);
+                        transform: translateY(calc(-100% - var(--mobile-gap)));
+                    }
                 }
             `}</style>
         </div>

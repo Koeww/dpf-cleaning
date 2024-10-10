@@ -65,6 +65,14 @@ const PopUp = ({closeOverlay, title, content}) => {
                     height: 2rem;
                     cursor: pointer;
                 }
+                @media screen and (min-width: 480px) {
+                    .PopUp {
+                        max-height: 20rem;
+                        height: 20rem;
+                        max-width: calc(100vw - 2*var(--mobile-gap));
+                        overflow-y: hidden;
+                    };
+                }
             `}</style>
         </div>
     )

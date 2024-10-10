@@ -100,7 +100,8 @@ const Offer = () => {
 			@media screen and (max-width: 480px) {
 				.Offer {
 					padding: 1rem 0.75rem;
-					height: fit-content;
+					width: calc(100vw - 2*var(--mobile-gap));
+					position: static;
 				}
 				.dpf-reinigung {
 					width: 4.5rem;
