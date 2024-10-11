@@ -8,7 +8,6 @@ const Header = () => {
 
     const onClickBurger = () => {
         setIsVissibleMenu(prevState => prevState ? false : true);
-
     };
 
 	const menuClass = classNames('menu', {
@@ -143,6 +142,7 @@ const Header = () => {
                 @media screen and (max-width: 480px) {
                     .Header {
                         text-wrap: nowrap;
+                        padding: var(--mobile-gap);
                     }
                     .burger {
                         width: 2rem;
