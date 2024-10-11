@@ -37,6 +37,16 @@ const Hero2 = () => {
                     padding: 1.5rem var(--desktop-gap);
                     background-color: var(--primary-color);                
                 }
+                @media screen and (max-width: 480px) {
+                    .content {
+                        height: 6rem;
+                    }
+                    img {
+                        height: 15rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }   
+                }
             `}</style>
         </div>
     )

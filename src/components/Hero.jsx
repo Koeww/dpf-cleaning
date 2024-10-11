@@ -54,15 +54,15 @@ const Hero = () => {
                     }
                     .h1-h2-wrapper {
                         width: 70vw;
-
-                        position: relative;
-                        top: 0;
-                        left: 0;
+                        position: absolute; 
+                        top: 60%;
+                        left: var(--mobile-gap);
                         margin: 0 var(--mobile-gap) auto 0;
+
                     }
                     .iso {
-                        width: 7rem;
-                        height: 7rem;
+                        width: 6rem;
+                        height: 6rem;
                         top: 20.5rem;
                         right: var(--mobile-gap);
                         transform: translateY(calc(-100% - var(--mobile-gap)));
