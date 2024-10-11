@@ -152,6 +152,7 @@ const Header = () => {
                         width: calc(100vw - 4*var(--mobile-gap));
                         text-wrap: wrap;
                         left: 0;
+                        z-index: 10;
 
                     }
                     .underline-effect {
