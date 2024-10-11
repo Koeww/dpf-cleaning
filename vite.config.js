@@ -8,9 +8,5 @@ export default defineConfig({
         plugins: ['styled-jsx/babel']
       }
     })
-  ],
-  server: {
-    host: '0.0.0.0',  // This allows access from any IP on your local network
-    port: 5174,
-  }
+  ]
 })
