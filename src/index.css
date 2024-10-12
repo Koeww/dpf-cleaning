@@ -184,4 +184,8 @@ button:focus, button:focus-visible {
 		color: #ffffff;
 		background-color: #333333;
 	}
+
+	.Header a {
+		color: var(--text-color);
+	}
 }

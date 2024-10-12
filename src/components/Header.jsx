@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import classNames from 'classnames';
-import {routes} from '../routes'
+import {routes} from '../routes';
 
 const Header = () => {
     const [isVissibleMenu, setIsVissibleMenu] = useState(false);
@@ -19,16 +19,13 @@ const Header = () => {
             <a href="/">
                 <img src="/images/dpf-logo-new.svg" alt="logo" className="logo"/>
             </a>
-
             <div className='links-container'>
                 <Link to={routes.home} className="underline-effect">Начало</Link>
                 <Link to={routes.services} className="underline-effect">Услуги</Link>
                 <Link to={routes.about} className="underline-effect">За нас</Link>
                 <Link to={routes.contacts} className="underline-effect">Контакти</Link>
-
                 <img src={`/images/${!isVissibleMenu ? 'burger' : 'slim-close-icon-white'}.svg`} className='burger' onClick={onClickBurger}/>
             </div>
-
 
             <ul className={menuClass}>
                 <li>
@@ -52,7 +49,6 @@ const Header = () => {
                     </div>
                     <span className="contacts-span">гр.Поморие, Околовръстен път Бургас - Варна, до КПП</span>
                 </li>
-
             </ul>
             <style jsx>{`
                 .Header {
@@ -63,7 +59,6 @@ const Header = () => {
                     padding: 1rem 2rem;
                     height: 3.5rem;
                 }
-
                 .logo {
                     display: flex;
 
@@ -76,17 +71,14 @@ const Header = () => {
                 .logo.react:hover {
                     filter: drop-shadow(0 0 2em #61dafbaa);
                 }
-
                 .links-container {
                     display: flex;
                     align-items: center;
                     gap: 1rem;
                 }
-
                 .links-container a {
                     font-size: 4rem;
                 }
-
                 .burger {
                     width: 2.5rem;
                     height: 2.5rem;
@@ -105,7 +97,6 @@ const Header = () => {
                     margin: 0 auto;
                     padding: 3rem 2rem;
                     background-color: #333333;
-                    color: white;
                     overflow: hidden;
                     z-index: 1;
                     transition: max-height 150ms linear, opacity 250ms ease-in-out;
@@ -156,7 +147,6 @@ const Header = () => {
                         text-wrap: wrap;
                         left: 0;
                         z-index: 10;
-
                     }
                     .underline-effect {
                         font-size: 1rem;
@@ -168,6 +158,6 @@ const Header = () => {
             `}</style>
         </div>
     )
-}
+};
 
-export default Header
+export default Header;

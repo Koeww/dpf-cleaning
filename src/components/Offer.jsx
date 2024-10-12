@@ -50,7 +50,7 @@ const Offer = () => {
 				top: 11rem;
 				left: 2rem;
 				width: 30rem;
-				height: 25rem;
+				height: fit-content;
 				background-color: white;
 				padding: 2rem 1.5rem;
 				display: flex;
