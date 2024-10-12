@@ -5,13 +5,13 @@ const Useful = () => {
         <h3>Полезна информация за DPF филтрите</h3>
         <h4>Какво е DPF филтър?</h4>
 
-        <div className="moving-elements-wrapper">
+        {/* <div className="moving-elements-wrapper">
             <img src="images/dpf-filter-green.svg" alt="el1" className="moving-element el1" />
             <img src="images/french.svg" alt="el2" className="moving-element el2" />
             <img src="images/gear.svg" alt="el3" className="moving-element el3" />
             <img src="images/screw-driver.svg" alt="el4" className="moving-element el4" />
             <img src="images/wrench.svg" alt="el5" className="moving-element el5" />
-        </div>
+        </div> */}
 
         <div className='cards-wrapper'>
             <div className="cards">
@@ -142,15 +142,17 @@ const Useful = () => {
                 font-size: 1.5rem;
                 margin: 1rem 0 1rem 0;
             }
-            @media screen and (min-width: 480px) { 
+            @media screen and (max-width: 480px) { 
                 .moving-elements-wrapper {
                     width: calc(100vw - 2*var(--mobile-gap));
                 }
                 .cards-wrapper {
-                    display: flex; 
-					width: 16rem;
+                    display: flex;
+                    justify-content: center;
+					width: 20rem;
 					overflow: scroll;
 					scroll-snap-type: x proximity;
+                    
                 }
                 .cards {
                     width: 16rem;
