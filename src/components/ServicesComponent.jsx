@@ -1,5 +1,4 @@
 import React from 'react'
-import GoogleMapsReviews from './GoogleReviews'
 
 const ServicesComponent = () => {
   return (
