@@ -1,4 +1,3 @@
-// Layout.js
 import {useState} from 'react';
 import {Outlet} from 'react-router-dom';
 import ContactBar from '../components/ContactBar';
