@@ -144,6 +144,9 @@ const Header = () => {
                         text-wrap: nowrap;
                         padding: var(--mobile-gap);
                     }
+                    .links-container {
+                        gap: 0.5rem;
+                    }
                     .burger {
                         width: 2rem;
                         height: 2rem;
