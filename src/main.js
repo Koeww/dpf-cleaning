@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 			{ path: routes.about, element: React.createElement(About) },
 			{ path: routes.contacts, element: React.createElement(Contacts) },
 			{ path: routes.services, element: React.createElement(Services) }
-		],
+		]
 	}
 ]);
 
