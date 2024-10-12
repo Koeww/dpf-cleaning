@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "NODE_ENV=development vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "vite build",
+    "preview": "NODE_ENV=production vite preview",
+    "predeploy": "NODE_ENV=production vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
