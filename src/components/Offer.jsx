@@ -2,48 +2,48 @@ import React from 'react'
 
 const Offer = () => {
 
-  return (
-    <div className="Offer">
-        <div className='wrapper'>
-          <img src="images/dpf-reinigung.svg" alt="dpf-reinigung" className='dpf-reinigung'/>
+	return (
+		<div className="Offer">
+			<div className='wrapper'>
+				<img src="images/dpf-reinigung.svg" alt="dpf-reinigung" className='dpf-reinigung' />
 
 
-          <div className='text-wrapper'>
-            DPF CLEANING
-            <span className='additional-text'>
-              from <span className='additional-text-price'>299BGN</span>
-            </span>
-          </div>
-        </div>
+				<div className='text-wrapper'>
+					DPF CLEANING
+					<span className='additional-text'>
+						from <span className='additional-text-price'>299BGN</span>
+					</span>
+				</div>
+			</div>
 
-        <ul>
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            Почистване на фиксирана цена без (ддс).
-          </li>
+			<ul>
+				<li>
+					<img src="images/tick.svg" alt="tick" />
+					Почистване на фиксирана цена без (ддс).
+				</li>
 
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            Включва (Взимане и връщане).
-          </li>
+				<li>
+					<img src="images/tick.svg" alt="tick" />
+					Включва (Взимане и връщане).
+				</li>
 
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            12-Месечна Гаранция!
-          </li>
+				<li>
+					<img src="images/tick.svg" alt="tick" />
+					12-Месечна Гаранция!
+				</li>
 
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            Включва тестов протокол.
-          </li>
+				<li>
+					<img src="images/tick.svg" alt="tick" />
+					Включва тестов протокол.
+				</li>
 
-          <li>
-            <img src="images/tick.svg" alt="tick" />
-            ISO 9001 Certified
-          </li>
-        </ul>
+				<li>
+					<img src="images/tick.svg" alt="tick" />
+					ISO 9001 Certified
+				</li>
+			</ul>
 
-        <style jsx>{`
+			<style jsx>{`
 			.Offer {
 				color: #333333;
 				position: absolute;
@@ -104,17 +104,25 @@ const Offer = () => {
 					position: static;
 				}
 				.dpf-reinigung {
-					width: 4.5rem;
-					height: 4.5rem;
+					width: 3rem;
+					height: 3rem;
+				}
+				.additional-text {
+					font-size: 1rem;
+				}
+				.additional-text-price {
+					font-size: 2rem;
+					padding-left: 0.25rem
 				}
 				ul {
     				padding-inline-start: 0;
 					text-wrap: wrap;
+					font-size: 0.75rem;
 				}
 			}
         `}</style>
-    </div>
-  )
+		</div>
+	)
 }
 
 export default Offer

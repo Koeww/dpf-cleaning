@@ -23,7 +23,7 @@ const WhyUs = () => {
                         <p>Защото почистваме DPF филтри на всички видове леки коли, автомобили, бусове – леко товарни, селскостопански машини , влекачи и тежкотоварни машини, дори ако е превозното средство е над 7.5 тона.</p>
                     </li>
 
-                    <li className='has-background-green'>
+                    <li className='has-background-green order'>
                         <img src="/images/tools-white.svg" alt="tools" />
                         <h5>Модерна Технология</h5>
                         <p>Защото машината ни е с едно от най-модерните и щадящи почиствания за DPF</p>
@@ -70,6 +70,19 @@ const WhyUs = () => {
             li img {
                 width: 4rem;
                 height: 4rem;
+            }
+            @media screen and (max-width: 480px) {
+                ul {
+                    flex-direction: column;
+                }
+                li {
+                    width: 100%;
+                    
+                }
+                .order {
+                    order: 1
+                }
+                
             }
         `}</style>
     </div>
