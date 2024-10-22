@@ -14,5 +14,3 @@ export default defineConfig({
 		port: 8081,
 	}
 })
-
-import { defineConfig } from 'vite';
