@@ -9,5 +9,10 @@ export default defineConfig({
 				plugins: ['styled-jsx/babel']
 			}
 		})
-	]
+	],
+	server: {
+		port: 8081,
+	}
 })
+
+import { defineConfig } from 'vite';
