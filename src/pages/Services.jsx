@@ -2,39 +2,79 @@ import React from 'react'
 
 const services = [
 	{
-	  id: 1,
-	  title: 'Text text',
-	  description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
-	  icon: 'images/clock-white.svg'
+		id: 1,
+		title: 'Text text',
+		description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
+		icon: 'images/clock-white.svg'
 	},
 	{
-	  id: 2,
-	  title: 'ЗАПАЗИ ЧАС',
-	  description: 'Запази удобен за теб час',
-	  icon: 'images/clock-white.svg'
+		id: 2,
+		title: 'ЗАПАЗИ ЧАС',
+		description: 'Запази удобен за теб час',
+		icon: 'images/clock-white.svg'
 	},
 	{
-	  id: 3,
-	  title: 'Text text',
-	  description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
-	  icon: 'images/clock-white.svg',
+		id: 3,
+		title: 'Text text',
+		description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
+		icon: 'images/clock-white.svg',
 	},
-  ];
-  
-  const Services = () => {
+];
+
+const Services = () => {
 	return (
-	  <section className="Services">
-		<h2>Our Services</h2>
-		<div className="service-list">
-		  {services.map((service) => (
-			<div key={service.id} className="service-card">
-			<img src={service.icon} alt="service-icon" className="service-icon" />
-			  <h3>{service.title}</h3>
-			  <p>{service.description}</p>
-			</div>
-		  ))}
-		</div>
-		<style jsx>{`
+		<section className="Services">
+			<h1>Почистване на DPF/FAP филтри</h1>
+
+			<ul>
+				<li>
+					DPF филтър (Diesel Particulate Filter) е филтър за почистване на твърдите частици от изгорелите газове в изпускателната система на дизелови двигатели. Твърдите частици се образуват при изгаряне на дизеловото гориво в цилиндъра и горивната камера. С времето и пробега, тези частици се натрупват и запушват  така наречения DPF филтър. Това води до редица отрицателни последици, както за двигателя, така и за околната среда.
+				</li>
+				<li>
+					Тъй като има лимитиран капацитет, за да се гарантира, че DPF филтъра ще продължава да работи добре, на определен период от време, трябва да се почиства или ако е твърде късно да се  подменя с нов.
+				</li>
+				<li>
+					Намаляването на емисиите от дизеловите двигатели е едно от най-важните предизвикателства за качеството на въздуха.
+				</li>
+			</ul>
+
+			<h2>Ние почистваме DPF/FAP филтри  и катализатори на</h2>
+
+			<ul>
+				<li>автомобили</li>
+				<li>джипове</li>
+				<li>Микробуси</li>
+				<li>Камиони</li>
+				<li>Автобуси</li>
+				<li>Селскостопанска техника</li>
+			</ul>
+
+			<h2>ГРИЖА ЗА ВАШИЯТ ДПФ ФИЛТЪР</h2>
+			<ul>
+				<li>
+					С течението на времето, филтърът за твърди частици (DPF) се запушва и влошава нормалното функциониране на Вашия автомобил. Решението е машинно почистване по нова технология, без да се използват химикали като киселина и белина, които увреждат керамичното му покритие. Тъй нареченото пране с белина е изключително вредно за Вашия филтър. Киселината и белината увреждат керамичното покритие като го праят абразивно и лесно чупливо.
+				</li>
+				<li>
+					Освен това белината избелва най-горния слой. Създава илюзия, че филтърът е почистен, но в дълбочина саждите стоят. Разполагаме с най-съвременната американска технология за пълно почистване на Вашите филтри, която чрез изпичане превръща твърдите частици (саждите, натрупани от изгорелите газове) в пепел.  След това чрез машина с  мощен вакуум се изсмуква пепелта.
+				</li>
+				<li>
+					По този начин ние рециклираме Вашият филтър.
+				</li>
+			</ul>
+
+
+			Какви са признаците, че DPF филтърът Ви е запушен?
+			Лампата за DPF свети на таблото
+			Колата ви е авариен режим
+			Чести опити колата да регенеирара DPF
+			Охлаждащите вентилатори, работят по-често
+			Нивото на маслото се увеличава
+			Увеличена  консумация на гориво
+
+			Премахването на DPF филтъра е незаконно!
+			Всеки притежател на дизелов двигател, към който не е прикрепен DPF, подлежи на глоби!
+
+			<style jsx>{`
 			.Services {
 				padding: 40px;
 				background-color: var(--background-color);
@@ -46,83 +86,9 @@ const services = [
 				margin-bottom: 30px;
 				color: var(--text-color);
 			}
-
-			.service-list {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-				gap: 20px;
-			}
-
-			.service-card {
-				background-color: var(--primary-color);
-				padding: 20px;
-				border-radius: 10px;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
-			}
-
-			.service-card:hover {
-				transform: translateY(-10px);
-				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-			}
-
-			.service-icon {
-				width: 4rem;
-				height: 4rem;
-			}
-
-			.service-card h3 {
-				font-size: 1.5rem;
-				margin-bottom: 10px;
-				color: var(--text-color);
-			}
-
-			.service-card p {
-				font-size: 1rem;
-				color: var(--text-color);
-				line-height: 1.6;
-			}
-
-			@media (max-width: 768px) {
-				.services h2 {
-					font-size: 2rem;
-				}
-
-				.service-card {
-					padding: 15px;
-				}
-
-				.service-card h3 {
-					font-size: 1.25rem;
-				}
-
-				.service-card p {
-					font-size: 0.9rem;
-				}
-			}
-			@media screen and (max-width: 480px) {
-				.Services {
-					padding: 0;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					margin-bottom: var(--mobile-gap);
-				}
-				.service-list {
-					display: flex; 
-					width: 16rem;
-					overflow: scroll;
-					scroll-snap-type: x proximity;
-				}
-				.service-card {
-					width: 14rem;
-					scroll-snap-align: center;
-					flex-shrink: 0;
-				}
-			}
 		`}</style>
-	  </section>
+		</section>
 	);
-  };
-  
-  export default Services;
+};
+
+export default Services;

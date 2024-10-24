@@ -50,8 +50,6 @@ const Footer = () => {
                     background-color: var(--background-color); 
                     color: #ffffff;            
                     padding: 2rem var(--desktop-gap);
-                    border-top: 0.0625rem solid var(--primary-color); 
-                    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
                 }
                 .wrapper {
 

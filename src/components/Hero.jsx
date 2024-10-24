@@ -25,7 +25,7 @@ const Hero = () => {
 
             <style jsx>{`
                 .Hero {
-                    width: 100vw;
+                    width: 100%;
                     height: fit-content;
                     position: relative; 
                 }

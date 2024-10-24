@@ -1,7 +1,5 @@
 @import './assets/variables.css';
-
 :root {
-	box-sizing: border-box;
 	font-family: var(--font-secondary); 
 	line-height: 1.25;
 	font-size: var(--font-size-base);
@@ -16,6 +14,24 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
 }
+
+::-webkit-scrollbar {
+	width: 0.375rem; 
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background-color);
+}
+  
+::-webkit-scrollbar-thumb {
+	background-color: #888; 
+	border-radius: 6px;      
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
 
 body {
     height: fit-content;
