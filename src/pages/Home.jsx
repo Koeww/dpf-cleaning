@@ -4,6 +4,7 @@ import ServicesComponent from '../components/ServicesComponent';
 import WhyUs from '../components/WhyUs';
 import Useful from '../components/Useful';
 import Diagram from '../components/Diagram';
+import Counters from '../components/Counters';
 import Offer from '../components/Offer';
 import GoogleMapsReviews from '../components/GoogleReviews';
 
@@ -13,12 +14,13 @@ const Home = () => {
         <>
             <Hero />
             <Offer />
-            <GoogleMapsReviews/>
+            <GoogleMapsReviews />
             <ServicesComponent />
-            <Hero2/>
+            <Hero2 />
             <WhyUs />
             <Useful />
-            <Diagram />
+            {/* <Diagram /> */}
+            <Counters />
         </>
     )
 }

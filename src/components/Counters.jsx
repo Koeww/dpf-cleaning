@@ -61,18 +61,16 @@ const Counters = () => {
 
             <style jsx>{`
                 .Counters {
-                    position: absolute;
-                    top: 70%;
+                    width: 100%; 
+                    position: relative;
                     right: 0;
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
                     color: white;
-                    width: 70%;
                     background-color: var(--secondary-color);
                     border: 4px solid var(--primary-color);
-                    border-top-left-radius: 30px;
-                    border-bottom-left-radius: 30px;
+                    margin: var(--desktop-gap) 0;
                 }
                 li {
                     display: flex;
