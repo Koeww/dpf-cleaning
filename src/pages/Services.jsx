@@ -1,30 +1,14 @@
 import React from 'react'
 
-const services = [
-	{
-		id: 1,
-		title: 'Text text',
-		description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
-		icon: 'images/clock-white.svg'
-	},
-	{
-		id: 2,
-		title: 'ЗАПАЗИ ЧАС',
-		description: 'Запази удобен за теб час',
-		icon: 'images/clock-white.svg'
-	},
-	{
-		id: 3,
-		title: 'Text text',
-		description: 'lorem ipsum dolor sit amet, consectetur adipiscing',
-		icon: 'images/clock-white.svg',
-	},
-];
-
 const Services = () => {
 	return (
 		<section className="Services">
-			<h1>Почистване на DPF/FAP филтри</h1>
+			<h1>Услуги</h1> 
+
+			<h2>
+				<img src="images/stroke.svg" alt="lines"/>
+				Почистване
+			</h2>
 
 			<ul>
 				<li>
@@ -38,18 +22,37 @@ const Services = () => {
 				</li>
 			</ul>
 
-			<h2>Ние почистваме DPF/FAP филтри  и катализатори на</h2>
+			<h2>
+				<img src="images/stroke.svg" alt="lines"/>
+				Ние почистваме DPF/FAP филтри  и катализатори на
+			</h2>
 
-			<ul>
-				<li>автомобили</li>
-				<li>джипове</li>
-				<li>Микробуси</li>
-				<li>Камиони</li>
-				<li>Автобуси</li>
-				<li>Селскостопанска техника</li>
+			<ul className='vehicle-list'>
+				<li>
+					<img src="images/car-white.svg" alt="car-icon" />
+					Автомобили 
+				</li>
+				<li>
+					<img src="images/bus-white.svg" alt="car-icon" />
+					Микробуси
+				</li>
+				<li>
+					<img src="images/truck-white.svg" alt="car-icon" />
+					Камиони
+				</li>
+				<li>
+					<img src="images/autobus-white.svg" alt="car-icon" />
+					Автобуси
+				</li>
+				<li>
+					<img src="images/tractor-white.svg" alt="car-icon" />
+					Селскостопанска техника
+				</li>
 			</ul>
 
-			<h2>ГРИЖА ЗА ВАШИЯТ ДПФ ФИЛТЪР</h2>
+			<h2>
+				<img src="images/stroke.svg" alt="lines"/>
+				Грижа за вашия автомобил</h2>
 			<ul>
 				<li>
 					С течението на времето, филтърът за твърди частици (DPF) се запушва и влошава нормалното функциониране на Вашия автомобил. Решението е машинно почистване по нова технология, без да се използват химикали като киселина и белина, които увреждат керамичното му покритие. Тъй нареченото пране с белина е изключително вредно за Вашия филтър. Киселината и белината увреждат керамичното покритие като го праят абразивно и лесно чупливо.
@@ -63,30 +66,66 @@ const Services = () => {
 			</ul>
 
 
-			Какви са признаците, че DPF филтърът Ви е запушен?
-			Лампата за DPF свети на таблото
-			Колата ви е авариен режим
-			Чести опити колата да регенеирара DPF
-			Охлаждащите вентилатори, работят по-често
-			Нивото на маслото се увеличава
-			Увеличена  консумация на гориво
+			<h2>
+				<img src="images/stroke.svg" alt="lines"/>
+				Какви са признаците, че DPF филтърът Ви е запушен?
+			</h2>
 
-			Премахването на DPF филтъра е незаконно!
-			Всеки притежател на дизелов двигател, към който не е прикрепен DPF, подлежи на глоби!
+			<ul>
+				<li>
+					Лампата за DPF свети на таблото
+				</li> 
+				<li>
+					Колата ви е авариен режим
+				</li>
+				<li>
+					Чести опити колата да регенеирара DPF
+				</li>
+				<li>
+					Охлаждащите вентилатори, работят по-често
+				</li>
+				<li>
+					Нивото на маслото се увеличава
+				</li>
+				<li>
+					Увеличена  консумация на гориво
+				</li>
+			</ul>
+
+			<div className='danger'>
+				Премахването на DPF филтъра е незаконно!
+				Всеки притежател на дизелов двигател, към който не е прикрепен DPF, подлежи на глоби!
+			</div>
 
 			<style jsx>{`
-			.Services {
-				padding: 40px;
-				background-color: var(--background-color);
-				text-align: center;
-			}
-
-			.services h2 {
-				font-size: 2.5rem;
-				margin-bottom: 30px;
-				color: var(--text-color);
-			}
-		`}</style>
+				.Services {
+					padding: var(--desktop-gap);
+					background-color: var(--background-color);
+					text-align: left;
+				}
+				h1 {
+					text-align: center;
+					background: var(--primary-color);
+				}
+				h2 {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+				.vehicle-list li {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+				}
+				.danger {
+					margin-top: 3rem;
+					background: red;
+					padding: 1rem;
+					text-align: center;
+					font-weight: bold; 
+					border-radius: 1rem;
+				}
+			`}</style>
 		</section>
 	);
 };
