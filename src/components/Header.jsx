@@ -80,6 +80,7 @@ const Header = () => {
                     font-size: 4rem;
                 }
                 .burger {
+                    display: none;
                     width: 2.5rem;
                     height: 2.5rem;
                     cursor: pointer;
