@@ -80,7 +80,7 @@ const Header = () => {
                     font-size: 4rem;
                 }
                 .burger {
-                    display: none;
+                    
                     width: 2.5rem;
                     height: 2.5rem;
                     cursor: pointer;
@@ -128,9 +128,7 @@ const Header = () => {
                 .contacts-icon{
                     width: 1.5rem;
                 }
-                @media screen and (max-width: 768px) {
 
-                }
                 @media screen and (max-width: 480px) {
                     .Header {
                         text-wrap: nowrap;
@@ -140,6 +138,7 @@ const Header = () => {
                         gap: 0.5rem;
                     }
                     .burger {
+                        display: block;
                         width: 2rem;
                         height: 2rem;
                     } 
@@ -155,6 +154,13 @@ const Header = () => {
                     .logo {
                         display: none;
                     }
+                }
+
+                @media screen and (min-width: 768px) {
+                   .burger {
+                    display: none;
+                   }
+
                 }
             `}</style>
         </div>
