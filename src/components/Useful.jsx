@@ -1,11 +1,10 @@
 const Useful = () => {
 
-  return (
-    <div className='Useful'>
-        <h3>Полезна информация за DPF филтрите</h3>
-        <h4>Какво е DPF филтър?</h4>
+    return (
+        <div className='Useful'>
+            <h3>Полезна информация за DPF филтрите</h3>
 
-        {/* <div className="moving-elements-wrapper">
+            {/* <div className="moving-elements-wrapper">
             <img src="images/dpf-filter-green.svg" alt="el1" className="moving-element el1" />
             <img src="images/french.svg" alt="el2" className="moving-element el2" />
             <img src="images/gear.svg" alt="el3" className="moving-element el3" />
@@ -13,44 +12,47 @@ const Useful = () => {
             <img src="images/wrench.svg" alt="el5" className="moving-element el5" />
         </div> */}
 
-        <div className='cards-wrapper'>
-            <div className="cards">
-                <h6>    
-                    Неподдръжането на DPF филтрите може да доведе до    
-                </h6>
-                <ul>
-                    <li>Загуба на мощност на двигателя</li>
-                    <li>Увеличен разход на гориво</li>
-                    <li>Възможност за сериозни повреди на двигателя</li>
-                    <li>Повишени емисии и глоба от органите за контрол на замърсяването</li>
-                </ul>
+            <div className='cards-wrapper'>
+                <div className="cards">
+                    <h6>
+                        Неподдръжането на DPF филтрите може да доведе до
+                    </h6>
+                    <ul>
+                        <li>Загуба на мощност на двигателя</li>
+                        <li>Увеличен разход на гориво</li>
+                        <li>Възможност за сериозни повреди на двигателя</li>
+                        <li>Повишени емисии и глоба от органите за контрол на замърсяването</li>
+                    </ul>
+                </div>
+
+                <div className="cards">
+                    <h6>
+                        Признаци за проблеми с DPF филтър
+                    </h6>
+                    <ul>
+                        <li>Светеща лампа на таблото за управление</li>
+                        <li>Авариен режим на автомобила</li>
+                        <li>Чести опити за регенерация</li>
+                        <li>Нарастващ разход на гориво</li>
+                        <li>Загуба на мощност</li>
+                        <li>Повишени емисии</li>
+                    </ul>
+                </div>
+
+                <div className="cards">
+                    <h6>
+                        Какво предлагаме?
+                    </h6>
+                    <ul>
+                        <li>Почистване на DPF/FAP филтър</li>
+                        <li>Физическо и софтуерно премахване на DPF/FAP филтър.</li>
+                        <li>Проверка на системата и диагностика</li>
+                        <li>Съвети за правилна поддръжка</li>
+                    </ul>
+                </div>
             </div>
 
-            <div className="cards">
-                <h6>
-                    Как да разберете, че вашият DPF филтър има проблеми?
-                </h6>
-                <ul>
-                    <li>Светеща лампа на таблото за управление</li>
-                    <li>Нарастващ разход на гориво</li>
-                    <li>Загуба на мощност</li>
-                    <li>Повишени емисии</li>
-                </ul>
-            </div>
-
-            <div className="cards">
-                <h6>
-                    Какво предлагаме?
-                </h6>
-                <ul>
-                    <li>Професионално почистване на DPF филтри</li>
-                    <li>Проверка на системата и диагностика</li>
-                    <li>Съвети за правилна поддръжка</li>
-                </ul>
-            </div>
-        </div>
-
-        <style jsx>{`
+            <style jsx>{`
             .Useful {    
                 display: flex;
                 flex-direction: column;
@@ -127,16 +129,7 @@ const Useful = () => {
                 position: relative;
             }
 
-            li:not(:first-child)::before {
-                content: "";
-                position: absolute;
-                top: -0.25rem;
-                left: 50%;
-                background-color: white;
-                transform: translateX(-50%);
-                width: 1.875rem;
-                height: 0.25rem;
-            }
+            
 
             h6 {
                 font-size: 1.5rem;
@@ -161,8 +154,8 @@ const Useful = () => {
                 }
             }
         `}</style>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Useful;
