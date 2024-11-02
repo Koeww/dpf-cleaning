@@ -8,13 +8,13 @@
     
     /* Font Variables */
     --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Roboto', sans-serif;
+    --font-secondary: "Cormorant Garamond", serif;
 
     --font-weight-bold: 700;
     --font-weight-regular: 400;
   
-    --heading-font-size: 2rem; /* Customize as per your need */
-    --body-font-size: 1rem;    /* Customize as per your need */
+    --heading-font-size: 2rem; 
+    --body-font-size: 1rem;    
     
     --font-size-base: 16px;
     --font-size-large: 24px;
