@@ -23,7 +23,6 @@ const Header = () => {
                 <Link to={routes.home} className="underline-effect">Начало</Link>
                 <Link to={routes.services} className="underline-effect">Услуги</Link>
                 <Link to={routes.about} className="underline-effect">За нас</Link>
-                <Link to={routes.contacts} className="underline-effect">Контакти</Link>
                 <img src={`/images/${!isVissibleMenu ? 'burger' : 'slim-close-icon-white'}.svg`} className='burger' onClick={onClickBurger}/>
             </div>
 

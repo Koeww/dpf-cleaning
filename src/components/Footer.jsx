@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p>&copy;2024 Your Company. All rights reserved.</p>
+            <p>&copy;2024 SSI Ltd. All rights reserved.</p>
 
             <style jsx>{`
                 footer {
